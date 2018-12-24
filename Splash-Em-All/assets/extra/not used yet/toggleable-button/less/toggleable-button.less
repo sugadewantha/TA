@@ -1,0 +1,162 @@
+@defaultHexFontColor   : #fff;
+@defaultRGBAFontColor  : rgba(255,255,255,0.75);
+@defaultHandleBGColor  : #73A5E6;
+@buttonInnerBoxShadow  : 0 0 6px rgba(0,0,0,0.9), inset 0 0 15px rgba(0,0,0,0.9);
+@buttonOuterBoxShadow  : 1px 1px 6px rgba(0,0,0,0.9);
+@buttonHandleBoxShadow : 0 0 15px #000, inset 0 0 6px rgba(0,0,0,0.75);
+@zoom2BoxShadow        : 2px 2px 12px rgba(0,0,0,0.9);
+@zoom2InnerBoxShadow   : 0 0 30px #000, inset 0 0 12px rgba(0,0,0,0.75);
+@zoom3BoxShadow        : 3px 3px 18px rgba(0,0,0,0.9);
+@zoom3InnerBoxShadow   : 0 0 45px #000, inset 0 0 18px rgba(0,0,0,0.75);
+
+.BorderRadius(@string:@defaultOuterBorderRadius) {
+  -webkit-border-radius: @string;
+     -moz-border-radius: @string;
+          border-radius: @string;
+}
+
+.BoxShadow(@string:@buttonOuterBoxShadow) {
+  -webkit-box-shadow: @string;
+     -moz-box-shadow: @string;
+	        box-shadow: @string;
+}
+
+.BoxSizing(@string:border-box) {
+  -webkit-box-sizing: @string;
+     -moz-box-sizing: @string;
+          box-sizing: @string;
+}
+
+.ButtonHandleBoxShadow (@string:@buttonHandleBoxShadow) {
+  .BoxShadow(@string);
+}
+
+.ButtonInnerBoxShadow (@string:@buttonInnerBoxShadow) {
+  .BoxShadow(@string);
+}
+
+.ButtonOuterBoxShadow (@string:@buttonOuterBoxShadow) {
+  .BoxShadow(@string);
+}
+
+.UserSelect (@string:none) {
+  -webkit-user-select: @string;
+     -moz-user-select: @string;
+          user-select: @string;
+}
+
+.Zoom2BoxShadow (@string:@zoom2BoxShadow) {
+  .BoxShadow(@string);
+}
+
+.Zoom2InnerBoxShadow (@string:@zoom2InnerBoxShadow) {
+  .BoxShadow(@string);
+}
+
+.Zoom3BoxShadow (@string:@zoom3BoxShadow) {
+  .BoxShadow(@string);
+}
+
+.Zoom3InnerBoxShadow (@string:@zoom3InnerBoxShadow) {
+  .BoxShadow(@string);
+}
+
+.toggleable-button {
+	display: none;
+}
+
+.toggleable-button-outer {
+	background-color: #999;
+	.BorderRadius(12px);
+  .ButtonOuterBoxShadow;
+	cursor: pointer;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 1em !important;
+	height: 40px;
+	padding: 2px;
+  .UserSelect(none);
+	width: 100px;
+}
+
+.toggleable-button-inner {
+	background-color: #333;
+	.BorderRadius(8px);
+  .BoxSizing;
+  .ButtonInnerBoxShadow;
+	height: 34px;
+	margin: 3px;
+	overflow: hidden;
+	width: 94px;
+}
+
+.toggleable-button-inner-text {
+	color: @defaultHexFontColor;
+	color: @defaultRGBAFontColor;
+	font-size: 1em;
+	font-weight: 600;
+	float: left;
+	position: relative;
+	left: 20px;
+	line-height: 34px;
+}
+
+.toggleable-button-handle {
+	background-color: @defaultHandleBGColor;
+  .BorderRadius(7px);
+	.ButtonHandleBoxShadow;
+	.BoxSizing;
+	float: left;
+	height: 100%;
+	position: relative;
+	width: 33px;
+}
+
+.zoom-2 {
+	.BorderRadius(24px);
+  .Zoom2BoxShadow;
+	height: 80px;
+	width: 200px;
+}
+
+.zoom-2 > div {
+	.BorderRadius(20px);
+	height: 68px;
+	margin: 6px;
+	width: 188px;
+}
+
+.zoom-2 > div > div:first-child {
+	.BorderRadius(18px);
+	.Zoom2InnerBoxShadow;
+	width: 66px;
+}
+
+.zoom-2 > div > div:last-child {
+	font-size: 2em;
+	line-height: 68px;
+}
+
+.zoom-3 {
+	.BorderRadius(36px);
+  .Zoom3BoxShadow;
+	height: 120px;
+	width: 300px;
+}
+
+.zoom-3 > div {
+	.BorderRadius(28px);
+	height: 102px;
+	margin: 9px;
+	width: 282px;
+}
+
+.zoom-3 > div > div:first-child {
+	.BorderRadius(27px);
+	.Zoom3InnerBoxShadow;
+	width: 99px;
+}
+
+.zoom-3 > div > div:last-child {
+	font-size: 3em;
+	line-height: 102px;
+}

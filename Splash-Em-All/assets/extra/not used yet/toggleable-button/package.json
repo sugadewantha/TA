@@ -1,0 +1,32 @@
+{
+  "name": "toggleable-button",
+  "version": "1.0.4",
+  "description": "Automatically replaces any checkbox input type with a toggleable button.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashepherd89/toggleable-button.js.git"
+  },
+  "keywords": [
+    "javascript",
+    "toggleable",
+    "button"
+  ],
+  "author": "Alexander Shepherd",
+  "license": "MIT",
+  "devDependencies" : {
+    "grunt" : "^0.4.5",
+    "grunt-cli"            : "~0.1.13",
+    "grunt-contrib-uglify" : "~0.8.0",
+    "grunt-contrib-concat" : "~0.5.1",
+    "grunt-contrib-jshint" : "~0.11.0",
+    "grunt-contrib-less"   : "~1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ashepherd89/toggleable-button.js/issues"
+  },
+  "homepage": "https://github.com/ashepherd89/toggleable-button.js"
+}

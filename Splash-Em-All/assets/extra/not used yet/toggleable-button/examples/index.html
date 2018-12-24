@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Toggleable Button JS Library</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Alexander Shepherd">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../dist/css/toggleable-button.css" />
+	<script type="text/javascript" src="../dist/js/toggleable-button.js"></script>
+  
+  <!-- Initialize toggleable button -->
+  <script type="text/javascript">
+    window.onload = function() {
+      BoxKite.ToggleableButton.init();
+      
+      /*ToggleableButton.init({
+        onStateValue : "ja",
+        offStateValue : "nein"
+      });*/
+    };
+  </script>
+</head>
+
+<body>
+	<div id="heading">
+		<div id="header-wrapper">
+			<h1 id="page-title">Toggleable Button JS Library</h1>
+		</div>
+	</div>
+	
+	<div id="page">
+		<div class="main">
+			<form method="post" action="#">
+				<div id="form-container">
+          <form>
+            <h2>Toggleable Button Demos</h2>
+
+            <div>
+              <div>
+                <h3>Normal</h3>
+                <label for="normal-toggle-button">
+                  <!-- Include the toggleable-button class in the class attribute of a form checkbox 
+                  to create a normal-sized button. -->
+                  <input class="toggleable-button" id="normal-toggle-button" name="normal-toggle-button" type="checkbox" />
+                </label>
+
+                <div class="form-group-wrapper">
+                  <div class="form-description">Include the below code snippet within the form element of your page:</div>
+                  <textarea><input class="toggleable-button" name="" type="checkbox" /></textarea>
+                </div>
+              </div>
+              
+              <div>
+                <h3>Size x2</h3>
+                <label for="large-toggle-button">
+                  <!-- Include the toggleable-button and the tb-2x class in the class attribute of a 
+                  form checkbox to create a button that is 2 times bigger! -->
+                  <input class="toggleable-button tb-2x" id="large-toggle-button" name="large-toggle-button" type="checkbox" />
+                </label>
+
+                <div class="form-group-wrapper">
+                  <div class="form-description">Include the below code snippet within the form element of your page:</div>
+                  <textarea><input class="toggleable-button tb-2x" name="" type="checkbox" /></textarea>
+                </div>
+              </div>
+              
+              <div>
+                <h3>Size x3</h3>
+                <label for="xlarge-toggle-button">
+                  <!-- Include the toggleable-button and the tb-2x class in the class attribute of a 
+                  form checkbox to create a button that is 3 times bigger! -->
+                  <input class="toggleable-button tb-3x" id="xlarge-toggle-button" name="xlarge-toggle-button" type="checkbox" />
+                </label>
+
+                <div class="form-group-wrapper">
+                  <div class="form-description">Include the below code snippet within the form element of your page:</div>
+                  <textarea><input class="toggleable-button tb-3x" name="" type="checkbox" /></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="copyright">toggleable-button.js. This project and all of its code are licensed under the MIT License. 2013 - 2016. <a title="Click here to go www.boxkitewebdesign.com" href="//www.boxkitewebdesign.com" target="_blank">www.boxkitewebdesign.com</a></div>
+	</div>
+</body>
+
+</html>

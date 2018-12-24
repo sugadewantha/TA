@@ -1,0 +1,28 @@
+{
+  "name": "toggleable-button",
+  "version": "1.0.4",
+  "homepage": "https://github.com/ashepherd89/toggleable-button.js",
+  "description": "Automatically replaces any checkbox input type with a toggleable button.",
+  "main": [
+    "dist/js/toggleable-button.js",
+    "dist/css/toggleable-button.css"
+  ],
+  "keywords": [
+		"boxkite",
+    "toggleable",
+    "button",
+    "javascript",
+    "library"
+  ],
+  "authors": [
+    "Alexander Shepherd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
